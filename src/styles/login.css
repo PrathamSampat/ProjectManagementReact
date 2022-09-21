@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+.stack{
+    /* position: absolute; */
+  width: 400px;
+  padding:  40px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-right: 30px; */
+  /* background: rgba(1,0,0,.5); */
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+  border-radius: 20px;
+}
+.login-text{
+    font-size: 30px;
+    margin: 0 0 30px;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    padding: 0;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.input-dark{
+  position: relative;
+  text-indent: 1rem;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  font-family: Poppins;
+}
+.input-light{
+  position: relative;
+  text-indent: 1rem;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+  font-family: Poppins;
+}
+.label{
+  position: absolute;
+  top:100;
+  left: 100;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.login-btn{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 2.5px;
+    font-family: Poppins;
+}

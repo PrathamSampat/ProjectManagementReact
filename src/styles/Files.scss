@@ -1,0 +1,119 @@
+.header {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 20px;
+  position: relative;
+  &-left {
+    align-items: center;
+    flex-grow: 1;
+  }
+  &-right {
+    align-items: center;
+  }
+  &-name {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0 32px;
+  }
+}
+.app {
+  width: 80%;
+}
+.search-wrapper {
+  border-radius: 20px;
+  padding-right: 12px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+  color: var(--light-font);
+  box-shadow: 0 2px 6px 0 rgba(136, 148, 171, 0.2),
+    0 24px 20px -24px rgba(71, 82, 107, 0.1);
+  overflow: hidden;
+}
+.icons {
+  margin-top: 0.5rem;
+}
+.icons:hover {
+  cursor: pointer;
+}
+#moon-icon {
+  margin-left: 10px;
+}
+#user-icon {
+  margin-left: 1rem;
+}
+.user-text {
+  margin-top: 0.1rem;
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+}
+.app-content {
+  padding: 16px 24px 24px 0;
+}
+.nav-icons {
+  border-radius: 10px;
+  padding: 2px;
+  &.active {
+    background-color: var(--link-color-active-bg);
+    color: var(--link-color-active);
+  }
+}
+.nav-icons:hover {
+  cursor: pointer;
+  background-color: var(--link-color-hover);
+  color: var(--link-color-active);
+}
+.home-section {
+  flex: 2;
+  margin-top: 5%;
+  background-color: var(--projects-section);
+  border-radius: 32px;
+  padding: 32px 32px 0 32px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px 0 rgba(136, 148, 171, 0.2),
+    0 24px 20px -24px rgba(71, 82, 107, 0.1);
+}
+.header-text {
+  font-size: 28px;
+}
+.time {
+  font-size: 20px;
+}
+.project-boxes {
+  margin: 0 -8px;
+  overflow-y: auto;
+
+  &.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+  }
+  .project-box-wrapper {
+    width: 33.3%;
+  }
+}
+.project-box {
+  border-radius: 30px;
+  padding: 16px;
+}
+.fileBox {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-left: -1px;
+  margin-top: -1px;
+  height: inherit;
+  &-text {
+    width: 86%;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+}

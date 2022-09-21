@@ -1,0 +1,17 @@
+.sidebar {
+  margin-top: 10%;
+  width: 10%;
+}
+.nav-icons {
+  border-radius: 10px;
+  padding: 2px;
+  &.active {
+    background-color: var(--link-color-active-bg);
+    color: var(--link-color-active);
+  }
+}
+.nav-icons:hover {
+  cursor: pointer;
+  background-color: var(--link-color-hover);
+  color: var(--link-color-active);
+}
