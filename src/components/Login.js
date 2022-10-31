@@ -11,6 +11,7 @@ import {
     useColorModeValue
   } from '@chakra-ui/react'
 import {MoonIcon} from '@chakra-ui/icons'
+import axios from 'axios';
 
 // useColorMode is a chakra ui component prop to switch between themes, first we need to set the color in light mode and then in dark mode
 
@@ -31,6 +32,8 @@ function Login({Login, error}) {
     const submitHandler = e => {
         e.preventDefault();
         Login(details);
+        let res = axios.post("http://127.0.0.1:8000/login/");
+        console.log("post req", res);
     }
   
     document.body.style.backgroundColor = bg2;
@@ -60,6 +63,7 @@ function Login({Login, error}) {
                         className={textIconColor} 
                         type='text' 
                         placeholder='Enter your username'
+                        name='username'
                         onChange={e => setDetails({...details, name: e.target.value})} 
                         value={details.name}
                     />
@@ -70,6 +74,7 @@ function Login({Login, error}) {
                     <input 
                         className={textIconColor} 
                         type='password' 
+                        name='password'
                         placeholder='Enter your password here' 
                         onChange={e => setDetails({...details, password: e.target.value})} 
                         value={details.password} 
