@@ -20,7 +20,6 @@ function App() {
       let res = await axios.get("http://127.0.0.1:8000/employees");
       let result = res.data;
       setResult(result);
-      console.log("resdata", res);
     } catch (e) {
       console.log(e);
     }

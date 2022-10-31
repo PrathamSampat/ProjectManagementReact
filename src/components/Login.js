@@ -32,8 +32,6 @@ function Login({Login, error}) {
     const submitHandler = e => {
         e.preventDefault();
         Login(details);
-        let res = axios.post("http://127.0.0.1:8000/login/");
-        console.log("post req", res);
     }
   
     document.body.style.backgroundColor = bg2;
